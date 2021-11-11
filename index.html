@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>html5</title>
+<style>
+  
+ body{
+ margin: 0;
+ padding: 0;
+ box-sizing:border-box;
+ overflow-x: hidden;
+ 
+ 
+}
+
+  #logo,#mg1 {
+   position: absolute;
+   left: 100px;
+   top: 30px;
+   margin: 0;
+
+  }
+ ul{
+ list-style: none;
+
+ }
+ nav ul,li,a{
+ display: inline-block;
+ margin-left: 50px;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: #c9cccd;
+
+ }
+nav{
+position: absolute;
+left: 200px;
+}
+#cabeçalho{
+ position: absolute;
+ top: 80px;
+ left: 20px;
+}
+
+#seçao{
+ position: absolute;
+ top: 450px;
+ width: 1010px;
+}
+
+.hj{
+ position: absolute;
+ font-size: 20px;
+ left: 90px;
+ color:#165885;
+ font-family: Arial;
+
+}
+span{
+color: #914d54;
+}
+p{
+ position: absolute;
+ width: 350px;
+ top: 70px;
+ font-size: 13px;
+ left: 90px;
+ color: #887e7e;
+ font-style: italic;
+  font-family: Arial;
+
+}
+#mhk{
+ position: absolute;
+ left: 600px;
+  width: 250px;
+  height: 170px;
+}
+
+#serviços{
+position: absolute;
+ top: 700px;
+ left: 20px;
+ width: 980px;
+ height: 200px;
+ background-color: #013567;
+ 
+
+}
+h2{
+text-align: center;
+color: #ffffff;
+font-family: Arial;
+}
+
+#barra1{
+position: absolute;
+width: 40px;
+height: 3px;
+top: 70px;
+left: 90px;
+background-color: #914d54;
+
+}
+#barra2{
+position: absolute;
+width: 180px;
+height: 1px;
+top: 50px;
+left: 400px;
+background-color: #ffffff;
+
+}
+div{
+display: inline-block;
+margin-left: 150px;
+text-align: center;
+}
+#btn{
+position:absolute;
+width: 40px;
+height:40px;
+left: 880px;
+top: 20px;
+}
+#modal{
+position: fixed;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,0.8);
+right: 0;
+top: 0;
+}
+#pagina{
+position: absolute;
+top: 70px;
+right: 250px;
+}
+#tnb{
+position: absolute;
+border: none;
+border-radius: 50%;
+width: 20px;
+height: 20px;
+background-color: #00f;
+color: #ffffff;
+font-size: 15px;
+top:50px;
+right: 234px;
+}
+#modal{
+display: none;
+
+}
+
+
+
+</style>
+
+<script>
+	
+  function inicia(){
+
+   var btn=document.getElementById("btn");
+   var btnj=document.getElementById("tnb");
+    btn.addEventListener("click",function(){
+
+   var modal=document.getElementById("modal").style.display="block";
+
+    });
+
+   btnj.addEventListener("click",function(){
+
+   var modal=document.getElementById("modal").style.display="none";
+
+    });
+
+
+  }
+
+
+
+ window.addEventListener("load",inicia);
+</script>
+
+
+
+
+
+
+
+</head>
+<body>
+
+  <div id="#logo">
+     <img  id="mg1" src="img/logo.jpg" height="25">
+  </div>
+   <img  id="btn" src="img/menu.png">
+  
+
+  <nav>
+ 	 <ul>
+ 	 	<li><a href="">Home</a></li>
+        <li><a href="">Sobre</a></li>
+        <li><a href="">Serviços</a></li>
+ 	 </ul>
+</nav>
+<header id="cabeçalho">
+	<img src="img/banner.jpg" width="980" height="300">
+</header>
+
+ <section id="seçao">
+  <h1 class="hj">CONHEÇA A<br> <span>NOSSA EMPREZA</span></h1>	
+   <span id="barra1"></span>
+  
+
+  <p>Veja se o começo do texto estava matador. É bem provável que não.
+   Empreender sem o que eu vou te contar agora é 
+   como entrar numa guerra com um estilingue, enquanto seus adversários têm bazucas.
+   Você pode estar se perguntando:</p>
+ 
+    <img id="mhk" src="img/pg1.jpg">
+</section>
+
+ <section id="serviços">
+ 	<h2>SERVIÇOS</h2>
+    <span id="barra2"></span>
+  <div>
+  	<img src="img/s1.jpg" width="120" height="80">
+  </div>
+  <div>
+   <img src="img/s2.jpg" width="120" height="80">
+  </div>
+  
+  <div>
+   <img src="img/s3.jpg" width="120" height="80">
+  </div>
+ </section>
+  <div id="modal">
+ 	<img id="pagina" src="img/site.jpg">
+    <button id="tnb">x</button>
+ </div>
+
+
+ </body>
+</html>
